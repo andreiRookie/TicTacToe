@@ -54,11 +54,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="24dp"
+
+        android:progressDrawable="@drawable/style_seekbar"
+        android:thumb="@drawable/ic_thumb"
+        android:splitTrack="false"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sound_textView"
-
-        />
+        app:layout_constraintTop_toBottomOf="@id/sound_textView"/>
 
     <TextView
         android:id="@+id/difficulty_textView"
@@ -113,6 +116,8 @@
         android:fontFamily="@font/roboto_medium"
         android:paddingLeft="8dp"
         android:text="Vertical row"
+        android:checked="true"
+        android:button="@drawable/style_checkbox"
         android:textColor="@android:color/secondary_text_material_light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,10 +128,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
         android:paddingLeft="8dp"
-        android:text="Vertical row"
+        android:text="Horizontal row"
+        android:checked="true"
+        android:button="@drawable/style_checkbox"
         android:textColor="@android:color/secondary_text_material_light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,10 +144,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
         android:paddingLeft="8dp"
-        android:text="Vertical row"
+        android:text="Diagonal"
+        android:checked="true"
+        android:button="@drawable/style_checkbox"
         android:textColor="@android:color/secondary_text_material_light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
