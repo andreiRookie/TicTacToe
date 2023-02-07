@@ -3,4 +3,6 @@
     <string name="new_game">New game</string>
     <string name="continue_game">Continue game</string>
     <string name="settings">Settings</string>
+    <string name="save_and_exit">Save and exit</string>
+
 </resources>
