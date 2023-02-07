@@ -6,7 +6,7 @@
         android:centerColor="@color/yellow"
         android:endColor="@color/red"
         android:angle="360"></gradient>
-    <stroke android:width="8dp" android:color="@color/violet_500"></stroke>
+    <stroke android:width="8dp" android:color="@color/yellow_200"></stroke>
 
 
 </shape>
