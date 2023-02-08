@@ -8,13 +8,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/pink_200"
         tools:context=".SettingsActivity">
 
 
         <TextView
-            android:id="@+id/difficulty2"
+            android:id="@+id/difficulty_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -22,19 +22,19 @@
             android:fontFamily="@font/roboto_medium"
             android:text="Easy"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/previous_level_imageView"
-            app:layout_constraintEnd_toStartOf="@+id/next_level_imageView"
-            app:layout_constraintStart_toEndOf="@+id/previous_level_imageView"
-            app:layout_constraintTop_toTopOf="@+id/previous_level_imageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/previous_level_button"
+            app:layout_constraintEnd_toStartOf="@+id/next_level_button"
+            app:layout_constraintStart_toEndOf="@+id/previous_level_button"
+            app:layout_constraintTop_toTopOf="@+id/previous_level_button" />
 
         <TextView
             android:id="@+id/sound_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="sound"
+            android:text="Sound"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settings_textView" />
@@ -84,32 +84,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto_medium"
             android:text="Game rules"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/previous_level_imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/previous_level_button" />
 
         <ImageView
-            android:id="@+id/previous_level_imageView"
+            android:id="@+id/previous_level_button"
             android:layout_width="44dp"
             android:layout_height="44dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/difficulty_textView"
             app:srcCompat="@drawable/ic_previous_24" />
 
         <ImageView
-            android:id="@+id/next_level_imageView"
+            android:id="@+id/next_level_button"
             android:layout_width="44dp"
             android:layout_height="44dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/difficulty_textView"
-            app:srcCompat="@drawable/ic_next_24" />
+            app:srcCompat="@drawable/ic_next_24"
+             />
 
         <CheckBox
             android:id="@+id/vertical_checkBox"
@@ -124,7 +125,7 @@
             android:minHeight="48dp"
             android:paddingLeft="8dp"
             android:text="Vertical row"
-            android:textColor="@android:color/secondary_text_material_light"
+            android:textColor="@color/grey_300"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +136,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:button="@drawable/style_checkbox"
             android:checked="true"
@@ -143,7 +144,7 @@
             android:minHeight="48dp"
             android:paddingLeft="8dp"
             android:text="Horizontal row"
-            android:textColor="@android:color/secondary_text_material_light"
+            android:textColor="@color/grey_300"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -154,7 +155,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:button="@drawable/style_checkbox"
             android:checked="true"
@@ -162,14 +163,14 @@
             android:minHeight="48dp"
             android:paddingLeft="8dp"
             android:text="Diagonal"
-            android:textColor="@android:color/secondary_text_material_light"
+            android:textColor="@color/grey_300"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horizontal_checkBox" />
 
         <TextView
-            android:id="@+id/toBack_textView"
+            android:id="@+id/toBack_button"
             style="@style/style_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

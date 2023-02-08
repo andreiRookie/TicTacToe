@@ -20,20 +20,20 @@
         app:srcCompat="@drawable/ic_logo_main_512"/>
 
     <TextView
-        android:id="@+id/to_new_game_text_view"
+        android:id="@+id/to_new_game_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
         android:text="@string/new_game"
-        app:layout_constraintBottom_toTopOf="@id/to_continue_game_text_view"
+        app:layout_constraintBottom_toTopOf="@id/to_continue_game_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         style="@style/style_button" />
 
     <TextView
-        android:id="@+id/to_settings_text_view"
+        android:id="@+id/to_settings_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -46,14 +46,14 @@
         style="@style/style_button"/>
 
     <TextView
-        android:id="@+id/to_continue_game_text_view"
+        android:id="@+id/to_continue_game_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
         android:text="@string/continue_game"
-        app:layout_constraintBottom_toTopOf="@id/to_settings_text_view"
+        app:layout_constraintBottom_toTopOf="@id/to_settings_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         style="@style/style_button"
